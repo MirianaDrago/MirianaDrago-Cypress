@@ -82,14 +82,15 @@ Tests that submitting an empty search does not break the page and ensures that t
 
 1. **UI Appearance**: Verify the appearance of search-related elements, such as button icons, colors, and layout, ensuring consistency across browsers and devices. This can also be achieved using visual testing tools like Percy or Applitools.
 2. **Result Sorting**: Test if search results are correctly sorted based on criteria like date, relevance, or popularity.
-3. **Edge Case Inputs**: Extend input testing to cover:
+3. **Post no-results workflow**: Test if the search functionality of the form shown on the "no results" page works as expected, similar to the initial search input field. 
+4. **Edge Case Inputs**: Extend input testing to cover:
    - Partial matches
    - Case sensitivity
    - Misspelled queries
    - Long search terms
    - SQL injection or security tests (optional consideration)
-4. **Pagination**: Validate the functionality of pagination, ensuring that navigating between pages correctly loads the expected results without errors.
-5. **Cross-Browser and Device Testing**: Expand tests to additional browsers beyond Chrome (e.g., Firefox, Edge) and devices (e.g., tablets, various resolutions).
+5. **Pagination**: Validate the functionality of pagination, ensuring that navigating between pages correctly loads the expected results without errors.
+6. **Cross-Browser and Device Testing**: Expand tests to additional browsers beyond Chrome (e.g., Firefox, Edge) and devices (e.g., tablets, various resolutions).
 
 ### Performance Testing (Optional Consideration)
 
