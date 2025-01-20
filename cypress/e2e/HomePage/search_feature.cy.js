@@ -65,7 +65,7 @@ viewPorts.forEach((viewport) => {
       })
     })
 
-    it.only('Nothing happens when search is given empty input', function() {
+    it('Nothing happens when search is given empty input', function() {
       HomePage.clickSearchButton()
       HomePage.elements.searchInputField().should('have.value', '').type('{enter}')
 
