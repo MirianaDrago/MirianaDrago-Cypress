@@ -1,4 +1,4 @@
-import HomePage from "../pageObjects/HomePage.cy";
+import HomePage from "../../pageObjects/HomePage.cy";
 
 const viewPorts = [
   { width: 1280, height: 800 },
@@ -10,7 +10,7 @@ viewPorts.forEach((viewport) => {
 
     Cypress.on('uncaught:exception', (err, runnable) => {
       return false;
-    });
+    })
   
     beforeEach(function() {
       cy.viewport(viewport.width, viewport.height)
