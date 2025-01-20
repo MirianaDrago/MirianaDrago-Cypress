@@ -18,7 +18,7 @@ viewPorts.forEach((viewport) => {
         this.testData = data
       })
       cy.visit('/')
-      HomePage.AcceptCookies()
+      cy.acceptCookies()
     })
 
     const searchTerms = ['football', 'horse racing bets'];
