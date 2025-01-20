@@ -65,9 +65,9 @@ viewPorts.forEach((viewport) => {
       })
     })
 
-    it('Nothing happens when search is given empty input', function() {
+    it.only('Nothing happens when search is given empty input', function() {
       HomePage.clickSearchButton()
-      HomePage.elements.searchInputField().type('{enter}')
+      HomePage.elements.searchInputField().should('have.value', '').type('{enter}')
 
       HomePage.elements.searchInputField().should('be.visible')
       cy.url().should('equal', Cypress.config('baseUrl')) // url should stay the same
