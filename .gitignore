@@ -4,6 +4,7 @@ node_modules/
 # Cypress generated files
 cypress/screenshots/
 cypress/videos/
+cypress/reports
 
 # Logs
 *.log
