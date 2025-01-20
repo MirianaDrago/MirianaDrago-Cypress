@@ -72,7 +72,7 @@ Tests that valid search terms return valid results, verify URL structure, and co
 
 2. **Invalid search terms**
 
-Tests that invalid search terms display an appropriate "no results" message.
+Tests that invalid search terms display an appropriate "no results" message as well as a new search form.
 
 3. **Empty Search Input**
 
